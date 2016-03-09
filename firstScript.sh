@@ -37,7 +37,6 @@
 #done
 #echo "$COUNTER"
 #!/bin/bash
-git clone https://github.com/stanchevm/SoftServeLinux.git
 read -p "set your username " USERNAME
 read -p "set your email " USEREMAIL
 git config --global user.name"$USERNAME"
@@ -46,5 +45,5 @@ read -p "Commit description: " desc
 git init
 git add .
 git commit -m "$desc" 
-
-git push -u 
+git remote add origin https://github.com/stanchevm/SoftServeLinux.git
+git push -u origin master
