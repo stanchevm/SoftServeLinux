@@ -37,10 +37,10 @@
 #done
 #echo "$COUNTER"
 #!/bin/bash
-read -p "set your username " USERNAME
-read -p "set your email " USEREMAIL
-git config --global user.name"$USERNAME"
-git config --global user.email"$USEREMAIL"
+#read -p "set your username " USERNAME
+#read -p "set your email " USEREMAIL
+#git config --global user.name"$USERNAME"
+#git config --global user.email"$USEREMAIL"
 read -p "Commit description: " desc
 git init
 git add .
